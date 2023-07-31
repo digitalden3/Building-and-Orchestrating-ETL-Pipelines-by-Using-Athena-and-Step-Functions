@@ -1,12 +1,14 @@
 <br />
 
 ![Architecture Diagram](WorkflowPOC.gif)
-  <h1 align="center">Traditional-Web-Hosting-On-AWS</h1>
+  <h1 align="center">AWS Academy Data Engineering</h1>
   <p align="center">
     <br />
-    AWS Academy Data Engineering: Building & Orchestrating ETL Pipelines by Using Athena and Step Functions
+     Building & Orchestrating ETL Pipelines by Using Athena and Step Functions
   </p>
-</p>
+  <p align="center">
+    <img src="WorkflowPOC.gif" width="400">
+  </p>
 
 ### Project date
 ------------------
