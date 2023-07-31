@@ -1,11 +1,11 @@
 
-<h1 align="center">AWS Academy Data Engineering</h1>
+<h1 align="center">Building & Orchestrating ETL Pipelines by Using Athena and Step Functions</h1>
 <p align="center">
   <br />
-  Building & Orchestrating ETL Pipelines by Using Athena and Step Functions
+  AWS Academy Data Engineering
 </p>
 <p align="center">
-  <img src="WorkflowPOC.gif" width="400">
+  <img src="WorkflowPOC.gif" width="600">
 </p>
 
 
@@ -22,6 +22,8 @@
 
 ### Project Description
 -----------------
+![Architecture](end-arch.png)
+
 In this lab, I used AWS Step Functions to build an extract, transform, and load (ETL) pipeline that uses Amazon Simple Storage Service (Amazon S3), an AWS Glue Data Catalog, and Amazon Athena to process a large dataset.
 
 Step Functions can help you automate business processes by creating workflows, also referred to as state machines. In this lab, I used Step Functions to build a workflow that invokes Athena to take a series of actions. An example of an action is running a query to discover if AWS Glue tables exist.
@@ -35,7 +37,7 @@ I designed the workflow so that if AWS Glue tables don't exist, the workflow wil
 ### Hands-On Lab
 ------------------
 
-- [Lab](https://www.youtube.com/watch?v=wdHhvifXs14&t=1200s)
+- [View Here](https://www.youtube.com/watch?v=wdHhvifXs14&t=1200s)
 
 
 ### Objectives
