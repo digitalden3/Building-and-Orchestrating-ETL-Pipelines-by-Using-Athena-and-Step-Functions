@@ -5,7 +5,7 @@
   AWS Academy Data Engineering
 </p>
 <p align="center">
-  <img src="WorkflowPOC.gif" width="600">
+  <img src="WorkflowPOC.png" width="600">
 </p>
 
 
@@ -26,18 +26,24 @@
 
 In this lab, I used AWS Step Functions to build an extract, transform, and load (ETL) pipeline that uses Amazon Simple Storage Service (Amazon S3), an AWS Glue Data Catalog, and Amazon Athena to process a large dataset.
 
-Step Functions can help you automate business processes by creating workflows, also referred to as state machines. In this lab, I used Step Functions to build a workflow that invokes Athena to take a series of actions. An example of an action is running a query to discover if AWS Glue tables exist.
+Overview of the ETL pipeline:
+Data was extracted from New York City taxi data, which is stored in Amazon S3. 
 
-The AWS Glue Data Catalog provides a persistent metadata store, including table definitions, schemas, and other control information. This information will help you to create the ETL pipeline.
+The data underwent transformations, including schema inference and column name adjustments using AWS Glue. If AWS Glue tables do not exist, additional Athena queries will be executed to create them. If the tables already exist, an AWS Glue query will be run to create a view in Athena that combines data from two tables.
 
-Athena is a serverless interactive query service that simplifies analyzing data in Amazon S3 by using standard SQL.
+The data was partitioned by pickup year and pickup month to enhance query performance. The transformed data was stored on Amazon S3 in Parquet format with Snappy compression, conserving storage space and enhancing data read speed. The data was then loaded into Athena, where it was queried using standard SQL for analysis.
 
-I designed the workflow so that if AWS Glue tables don't exist, the workflow will invoke additional Athena queries to create them. If the tables do exist, the workflow will run an additional AWS Glue query to create a view in Athena that combines data from two tables. I then queried that view to make interesting time-based and location-based discoveries in the large dataset.
+Step Functions workflow:
+The Step Functions workflow orchestrated the tasks, making it efficient and automated. The pipeline allows you to quickly start new data processing projects without having to repeat manual steps, making analysis of taxi usage patterns in New York City during the early part of 2020 easier and more efficient.
+
+The Step Functions workflow was constructed by using Step Functions Studio: 
+
+![Architecture](WorkflowPOC.gif)
 
 ### Hands-On Lab
 ------------------
 
-- [View Here](https://www.youtube.com/watch?v=wdHhvifXs14&t=1200s)
+- [View Here](https://youtu.be/kcuwa8EZ69Y)
 
 
 ### Objectives
