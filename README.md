@@ -20,6 +20,11 @@
 - Amazon Athena
 - AWS Glue
 
+### Hands-On Lab
+------------------
+
+- [View Here](https://youtu.be/kcuwa8EZ69Y)
+
 ### Project Description
 -----------------
 ![Architecture](end-arch.png)
@@ -39,11 +44,6 @@ The Step Functions workflow orchestrated the tasks, making it efficient and auto
 The Step Functions workflow was constructed by using Step Functions Studio: 
 
 ![Architecture](WorkflowPOC.png)
-
-### Hands-On Lab
-------------------
-
-- [View Here](https://youtu.be/kcuwa8EZ69Y)
 
 
 ### Objectives
