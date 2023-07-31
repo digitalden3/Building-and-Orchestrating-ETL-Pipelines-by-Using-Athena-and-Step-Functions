@@ -5,7 +5,7 @@
   AWS Academy Data Engineering
 </p>
 <p align="center">
-  <img src="WorkflowPOC.png" width="600">
+  <img src="WorkflowPOC.gif" width="600">
 </p>
 
 
@@ -38,7 +38,7 @@ The Step Functions workflow orchestrated the tasks, making it efficient and auto
 
 The Step Functions workflow was constructed by using Step Functions Studio: 
 
-![Architecture](WorkflowPOC.gif)
+![Architecture](WorkflowPOC.png)
 
 ### Hands-On Lab
 ------------------
